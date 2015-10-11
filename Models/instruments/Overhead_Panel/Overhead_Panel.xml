@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+
+<!--
+    #######################################################################################################
+    Arcraft development for Flightgear by Herbert Wagner 2014-2015                            Model: MI-6PS
+    Antonov AN-12BK, AN-22A, AN-225-Mrija,
+    Tuplev Tu-95MR,
+    Mil Mi-6PS
+    Yak 58, Yak-53,
+    Berijev Be-200Altair
+    SpaceShuttle
+    Development is ongoing, see latest versions: www.github.com/HerbyW
+    
+    This file is licenced under the terms mentioned in the LICENCE.txt file.
+    Mi6dev was initially started by Moritz Röhrich (Blender3D) 2010-2012 as CC 3.0 BY NC SA.
+    The 3D-model still holds the CC 3.0 BY NC SA license, everything else is GNU GPL v3 License.
+    
+    This version is now going forward and will give you a full automatic flight control-system,
+    lots of animations, instrumentation and full Multiplayer support for Parachuters and Elephant transport.
+    Liveries, Fire fighting and SAR rescue is in preparation.
+    Removing this header is probited.    
+    ########################################################################################################
+-->
+
+<PropertyList>
+	<path>Overhead_Panel.ac</path>
+	
+	<animation>
+		<name>Overhead_Panel</name>
+		<object-name>Panel</object-name>
+		<object-name>Plane.016</object-name>
+		<object-name>Plane.017</object-name>
+		<object-name>Plane.217</object-name>
+		<object-name>Plane.218</object-name>
+		<object-name>Plane.219</object-name>
+		<object-name>Plane.220</object-name>
+		<object-name>Plane.228</object-name>
+		<object-name>Plane.229</object-name>
+		<object-name>Screws</object-name>
+		<object-name>Switch.010</object-name>
+		<object-name>Switch.011</object-name>
+		<object-name>Switch.012</object-name>
+		<object-name>Switch.013</object-name>
+		<object-name>Switch.014</object-name>
+		<object-name>Switch.015</object-name>
+		<object-name>Switch.016</object-name>
+		<object-name>Switch.017</object-name>
+		<object-name>Switch.020</object-name>
+		<object-name>Switch.021</object-name>
+		<object-name>Switch.025</object-name>
+		<object-name>Switch.029</object-name>
+		<object-name>Switch.032</object-name>
+		<object-name>Switch.034</object-name>
+		<object-name>Switch.035</object-name>
+		<object-name>Switch.036</object-name>
+		<object-name>Switch.037</object-name>
+		<object-name>Switch.038</object-name>
+		<object-name>Switch.181</object-name>
+		<object-name>Switch.182</object-name>
+		<object-name>Switch.183</object-name>
+		<object-name>Switch.184</object-name>
+		<object-name>Switch.185</object-name>
+		<object-name>Switch.186</object-name>
+		<object-name>Switch.187</object-name>
+		<object-name>Switch.188</object-name>
+		<object-name>Switch.189</object-name>
+		<object-name>Switch.190</object-name>
+		<object-name>Switch.191</object-name>
+		<object-name>Switch.192</object-name>
+		<object-name>Switch.193</object-name>
+		<object-name>Switch.194</object-name>
+		<object-name>Switch.195</object-name>
+		<object-name>Switch.196</object-name>
+		<object-name>Switch.197</object-name>
+		<object-name>Switch.198</object-name>
+		<object-name>Switch.217</object-name>
+		<object-name>Switch.218</object-name>
+		<object-name>Switch_Protectors</object-name>
+		<object-name>autopilot</object-name>
+		<object-name>external-suspension</object-name>
+		<object-name>fan</object-name>
+		<object-name>friction</object-name>
+		<object-name>glass-heating</object-name>
+		<object-name>hydro-damping</object-name>
+		<object-name>instrument-heating</object-name>
+		<object-name>jettison-cargo</object-name>
+		<object-name>landinglight-l</object-name>
+		<object-name>landinglight-l-ctrl</object-name>
+		<object-name>landinglight-r</object-name>
+		<object-name>landinglight-r-ctrl</object-name>
+		<object-name>main_ai</object-name>
+		<object-name>reserve_ai</object-name>
+		<object-name>rotor-heating</object-name>
+	</animation>
+	
+	<animation>
+		<type>range</type>
+		<object-name>Overhead_Panel</object-name>
+		<min-m>0</min-m>
+		<max-m>7</max-m>
+	</animation>
+	
+	
+	<!--Main Engines Cover and Switch-->
+	
+	<animation>
+		<type>pick</type>
+		<object-name>Plane.016</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/switches/engines-main-cover</property>
+				<value>0</value>
+				<value>1</value>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+	  <type>rotate</type>
+	  <object-name>Plane.016</object-name>
+	  <property>controls/switches/engines-main-cover</property>
+	  <factor>-90</factor>
+	  <center>
+	    <x-m>-5.775</x-m>
+	    <y-m>-0.148</y-m>
+	    <z-m>3.600</z-m>
+	  </center>
+	  <axis>
+	    <x>0</x>
+	    <y>1</y>
+	    <z>0</z>
+	  </axis>
+	</animation>
+	
+	<animation>
+	  <type>pick</type>
+	  <object-name>Switch.188</object-name>
+	  <action>
+	    <button>0</button>
+	    <repeatable>false</repeatable>
+	    <binding>
+	      <command>nasal</command>
+	      <script>mi6.engines(1)</script>
+	    </binding>
+	  </action>
+	</animation>
+	
+	<animation>
+	  <type>pick</type>
+	  <object-name>Switch.188</object-name>
+	  <action>
+	    <button>1</button>
+	    <repeatable>false</repeatable>
+	    <binding>
+	      <command>nasal</command>
+	      <script>mi6.engines(0)</script>
+	    </binding>
+	  </action>
+	</animation>
+	
+	<animation>
+	  <type>rotate</type>
+	  <object-name>Switch.188</object-name>
+	  <property>sim/model/mi6/engine</property>
+	  <factor>-90</factor>
+	  <center>
+	    <x-m>-5.801</x-m>
+	    <y-m>0.139</y-m>
+	    <z-m>3.605</z-m>
+	  </center>
+	  <axis>
+	    <x>0</x>
+	    <y>1</y>
+	    <z>0</z>
+	  </axis>
+	</animation>
+	
+	<!--Rotor Brake Switch-->
+	<animation>
+	  <type>pick</type>
+	  <object-name>Switch.187</object-name>
+	  <action>
+	    <button>0</button>
+	    <repeatable>false</repeatable>
+	    <binding>
+	      <command>nasal</command>
+	      <script>interpolate("/controls/rotor/brake", 1.0, 2)</script>
+	    </binding>
+	  </action>
+	</animation>
+	
+	<animation>
+	  <type>pick</type>
+	  <object-name>Switch.187</object-name>
+	  <action>
+	    <button>1</button>
+	    <repeatable>false</repeatable>
+	    <binding>
+	      <command>nasal</command>
+	      <script>interpolate("/controls/rotor/brake", 0.0, 2)</script>
+	    </binding>
+	  </action>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>Switch.187</object-name>
+		<property>/controls/rotor/brake</property>
+		<factor>-90</factor>
+		<center>
+			<x-m>-5.801</x-m>
+			<y-m>0.179</y-m>
+			<z-m>3.605</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<!--Main Attitude Indicator Switch-->
+	<animation>
+		<type>pick</type>
+		<object-name>main_ai</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>instrumentation/attitude-indicator[0]/power</property>
+				<value>0</value>
+				<value>1</value>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>main_ai</object-name>
+		<property>instrumentation/attitude-indicator[0]/power</property>
+		<factor>-90</factor>
+		<center>
+			<x-m>-5.590</x-m>
+			<y-m>0.032</y-m>
+			<z-m>3.658</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<!--Backup Attitude Indicator Switch-->
+	<animation>
+		<type>pick</type>
+		<object-name>reserve_ai</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>instrumentation/attitude-indicator[1]/power</property>
+				<value>0</value>
+				<value>1</value>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>reserve_ai</object-name>
+		<property>instrumentation/attitude-indicator[1]/power</property>
+		<factor>-90</factor>
+		<center>
+			<x-m>-5.590</x-m>
+			<y-m>0.032</y-m>
+			<z-m>3.658</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+</PropertyList>

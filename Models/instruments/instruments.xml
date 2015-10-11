@@ -1,0 +1,351 @@
+<PropertyList>
+ 
+<!--
+    #######################################################################################################
+    Arcraft development for Flightgear by Herbert Wagner 2014-2015                            Model: MI-6PS
+    Antonov AN-12BK, AN-22A, AN-225-Mrija,
+    Tuplev Tu-95MR,
+    Mil Mi-6PS
+    Yak 58, Yak-53,
+    Berijev Be-200Altair
+    SpaceShuttle
+    Development is ongoing, see latest versions: www.github.com/HerbyW
+    
+    This file is licenced under the terms mentioned in the LICENCE.txt file.
+    Mi6dev was initially started by Moritz Röhrich (Blender3D) 2010-2012 as CC 3.0 BY NC SA.
+    The 3D-model still holds the CC 3.0 BY NC SA license, everything else is GNU GPL v3 License.
+    
+    This version is now going forward and will give you a full automatic flight control-system,
+    lots of animations, instrumentation and full Multiplayer support for Parachuters and Elephant transport.
+    Liveries, Fire fighting and SAR rescue is in preparation.
+    Removing this header is probited.    
+    ########################################################################################################
+--> 
+  
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/AGK-47/AGK-47.xml</path>
+		<offsets>
+			<x-m>0.015</x-m>
+			<y-m> 0.0</y-m>
+			<z-m>0.0</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/uvo/uvo.xml</path>
+		<offsets>
+			<x-m>-6.045</x-m>
+			<y-m>-0.76</y-m>
+			<z-m>2.925</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -8 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/ASI/ASI.xml</path>
+		<offsets>
+			<x-m>0.375</x-m>
+			<y-m>0.09</y-m>
+			<z-m>0.755</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -8 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/clock/clock.xml</path>
+		<offsets>
+			<x-m>-0.11</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>0.0</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/variometer/variometer.xml</path>
+		<offsets>
+			<x-m>0.37</x-m>
+			<y-m>-0.015</y-m>
+			<z-m>0.775</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -8 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/exhTempIndic/exhTempIndic.xml</path>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/Yadro/Yadro.xml</path>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/ADF-Control/ADF-Control.xml</path>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/Overhead_Panel/Overhead_Panel.xml</path>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/RPMGauge/RPMGauge.xml</path>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/RPMGauge/RPMGauge.xml</path>
+		<offsets>
+			<x-m>-0.93</x-m>
+			<y-m>0.28</y-m>
+			<z-m>0.555</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -8 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/EngineHealthIndicator/engineHealthIndicator.xml</path>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/EngineerPanelLeft/EngineerPanelLeft.xml</path>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/trim-neutral/ind_8.xml</path>
+		<offsets>
+			<x-m>-6.045</x-m>
+			<y-m>-0.701</y-m>
+			<z-m>3.04</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/warning/warning85.xml</path>
+		<offsets>
+			<x-m>-6.045</x-m>
+			<y-m>-0.645</y-m>
+			<z-m>3.11</z-m>  
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/warning/warning86.xml</path>
+		<offsets>
+			<x-m>-6.045</x-m>
+			<y-m>-0.645</y-m>
+			<z-m>3.087</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/ap/ap-fg.xml</path>
+		<offsets>
+			<x-m>-6.053</x-m>
+			<y-m>-0.23</y-m>
+			<z-m>3.15</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -1 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/alt-set/alt-set.xml</path>
+		<offsets>
+			<x-m>-6.053</x-m>
+			<y-m>-0.23</y-m>
+			<z-m>3.10</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -1 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/alt-set/pitch-set.xml</path>
+		<offsets>
+			<x-m>-6.053</x-m>
+			<y-m>-0.22</y-m>
+			<z-m>3.241</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -1 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/alt-set/floating-pitch-set.xml</path>
+		<offsets>
+			<x-m>-6.053</x-m>
+			<y-m>-0.355</y-m>
+			<z-m>3.241</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -1 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/warning/warning90.xml</path>
+		<offsets>
+			<x-m>-6.053</x-m>
+			<y-m>-0.25</y-m>
+			<z-m>3.07</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -1 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/alt-set/tilt-control.xml</path>
+		<offsets>
+			<x-m>-6.053</x-m>
+			<y-m>-0.355</y-m>
+			<z-m>3.341</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -1 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/warning/warning91.xml</path>
+		<offsets>
+			<x-m>-6.053</x-m>
+			<y-m>-0.25</y-m>
+			<z-m>3.195</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -1 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/pnp/pnp.xml</path>
+		<offsets>
+			<x-m>-6.05</x-m>
+			<y-m>-0.38</y-m>
+			<z-m>3.04</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/asi/asi.xml</path>
+		<offsets>
+			<x-m>-6.05</x-m>
+			<y-m>-0.38</y-m>
+			<z-m>3.16</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/km-5/km-5-1.xml</path>
+		<offsets>
+			<x-m>-4.85</x-m>
+			<y-m>-0.62</y-m>
+			<z-m>3.27</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/kurs-mp/kurs-mp-1.xml</path>
+		<offsets>
+			<x-m>-4.85</x-m>
+			<y-m>-0.67</y-m>
+			<z-m>3.40</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/kurs-mp/kurs-mp-2.xml</path>
+		<offsets>
+			<x-m>-4.85</x-m>
+			<y-m>-0.47</y-m>
+			<z-m>3.40</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/MI-6PS/Models/instruments/tnv-15/tnv-15.xml</path>
+		<offsets>
+			<x-m>-6.045</x-m>
+			<y-m>-0.76</y-m>
+			<z-m>3.025</z-m> 
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   0 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+    <path>Aircraft/MI-6PS/Models/instruments/uvid-15/uvid-15-m.xml</path>
+    <offsets>
+      <x-m>-6.045</x-m>
+			<y-m>-0.63</y-m>
+			<z-m>2.925</z-m>
+			<roll-deg>    0 </roll-deg>
+			<pitch-deg>   -8 </pitch-deg>
+			<heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/MI-6PS/Models/instruments/uvid-15/uvid-15-ft.xml</path>
+    <offsets>
+      <x-m>-6.045</x-m>
+			<y-m>-0.63</y-m>
+			<z-m>3.025</z-m> 
+    </offsets>
+  </model>
+
+      <!-- Ramp Control Panel (red box at ramp)-->
+    
+    <model>
+    <path>Aircraft/MI-6PS/Models/instruments/ramppanel/ramppanel.xml</path>
+    <offsets>
+      <x-m>  3.40 </x-m>
+      <y-m> 1.51</y-m>
+      <z-m> 3.00 </z-m>
+      <heading-deg>93.0</heading-deg>
+      <pitch-deg>170</pitch-deg>
+    </offsets>
+  </model> 
+  
+</PropertyList>

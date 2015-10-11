@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+    #######################################################################################################
+    Arcraft development for Flightgear by Herbert Wagner 2014-2015                            Model: MI-6PS
+    Antonov AN-12BK, AN-22A, AN-225-Mrija,
+    Tuplev Tu-95MR,
+    Mil Mi-6PS
+    Yak 58, Yak-53,
+    Berijev Be-200Altair
+    SpaceShuttle
+    Development is ongoing, see latest versions: www.github.com/HerbyW
+    
+    This file is licenced under the terms mentioned in the LICENCE.txt file.
+    Mi6dev was initially started by Moritz Röhrich (Blender3D) 2010-2012 as CC 3.0 BY NC SA.
+    The 3D-model still holds the CC 3.0 BY NC SA license, everything else is GNU GPL v3 License.
+    
+    This version is now going forward and will give you a full automatic flight control-system,
+    lots of animations, instrumentation and full Multiplayer support for Parachuters and Elephant transport.
+    Liveries, Fire fighting and SAR rescue is in preparation.
+    Removing this header is probited.    
+    ########################################################################################################
+-->
+<!-- indicators on central panel
+3D instrument for Tu-154 -->
+
+<PropertyList>
+
+<path>ind_8.ac</path>
+
+<!--External panel lighting-->
+
+<animation>
+  <type>material</type>
+  <object-name>cover_1</object-name>
+  <object-name>cover_2</object-name>
+  <object-name>cover_3</object-name>
+  <object-name>cover_4</object-name>
+  <object-name>cover_5</object-name>
+  <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
+
+<effect>
+ <inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>cover_1</object-name>
+  <object-name>cover_2</object-name>
+  <object-name>cover_3</object-name>
+  <object-name>cover_4</object-name>
+  <object-name>cover_5</object-name>
+</effect>
+
+
+<!--Indicators-->
+
+<animation>
+  <type>material</type>
+  <object-name>text_1</object-name>
+   <condition>    
+      <property>controls/switches/metar</property>
+      <value>1</value>     
+   </condition>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+    <factor>1</factor>
+  </emission>
+</animation>
+
+<animation>
+  <type>material</type>
+  <object-name>text_2</object-name>
+   <condition>
+    <or>
+     <less-than>
+      <property>controls/flight/rudder-trim</property>
+      <value>0</value>
+     </less-than>
+     <greater-than>
+      <property>controls/flight/rudder-trim</property>
+      <value>0</value>
+     </greater-than>
+    </or>
+   </condition>
+   <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+   </emission>
+</animation>
+
+<animation>
+  <type>material</type>
+  <object-name>text_3</object-name>
+   <condition>
+    <or>
+     <less-than>
+      <property>controls/flight/aileron-trim</property>
+      <value>0</value>
+     </less-than>
+     <greater-than>
+      <property>controls/flight/aileron-trim</property>
+      <value>0</value>
+     </greater-than>
+    </or>
+   </condition>
+   <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+   </emission>
+</animation>
+
+<animation>
+  <type>material</type>
+  <object-name>text_4</object-name>
+   <condition>
+    <or>
+     <less-than>
+      <property>controls/flight/elevator-trim</property>
+      <value>0</value>
+     </less-than>
+     <greater-than>
+      <property>controls/flight/elevator-trim</property>
+      <value>0</value>
+     </greater-than>
+    </or>
+   </condition>
+   <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+   </emission>
+</animation>
+
+<!--Check lamps procedure
+
+<animation>
+  <type>material</type>
+  <object-name>text_1</object-name>
+  <object-name>text_2</object-name>
+  <object-name>text_3</object-name>
+  <object-name>text_4</object-name>
+  <condition>
+    <property>systems/electrical/checking-lamps/main-panel</property>
+  </condition>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+    <factor-prop>systems/electrical/checking-lamps/main-panel</factor-prop>
+  </emission>
+</animation>
+
+-->
+
+<!--Controls-->
+
+<animation>
+  <type>pick</type>
+  <object-name>hs_1</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/flight/rudder-trim</property>
+      <value>0.0</value>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hs_2</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/flight/aileron-trim</property>
+      <value>0.0</value>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>hs_3</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/flight/elevator-trim</property>
+      <value>0.0</value>
+    </binding>    
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>text_1</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Latest Metar-Data:");</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/environment/metar/data"));</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Minimal ground visibility in meter:");</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/environment/metar/min-visibility-m"));</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Closest Airport:");</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/sim/airport/closest-airport-id"));</script>
+    </binding>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/switches/metar</property>
+      <value>0</value>
+    </binding>  
+    
+    </action>
+  </animation>
+
+</PropertyList>

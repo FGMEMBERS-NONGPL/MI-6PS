@@ -1,0 +1,116 @@
+<PropertyList>
+	<path>AGK-47.ac</path>
+	
+	<animation>   
+	  <object-name>Artificialhorizon.002</object-name>
+	  <object-name>Artificialhorizon.006</object-name>	  
+	</animation>	
+	
+	<animation>
+	  <type>noshadow</type>
+	  <object-name>Artificialhorizon.002</object-name>
+	  <object-name>Artificialhorizon.006</object-name>
+	</animation>
+	
+	<animation>
+	  <type>shader</type>
+	  <shader>chrome</shader>
+	  <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+	  <object-name>Artificialhorizon.002</object-name>
+	  <object-name>Artificialhorizon.006</object-name>
+	</animation>
+	
+	
+	
+	<animation>
+		<name>AGK-47</name>
+		<object-name>AI_Ball</object-name>
+		<object-name>AI_needle</object-name>
+		<object-name>AI_scala</object-name>
+		<object-name>AI_Ball.001</object-name>
+		<object-name>AI_needle.001</object-name>
+		<object-name>AI_scala.001</object-name>
+	</animation>
+	
+	<animation>
+		<type>range</type>
+		<object-name>AGK-47</object-name>
+		<min-m>0</min-m>
+		<max-m>7</max-m>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>AI_Ball</object-name>
+		<object-name>AI_needle</object-name>
+		<property>orientation/roll-deg</property>
+		<factor>-1</factor>
+		<center>
+			<x-m>-6.092</x-m>
+			<y-m>-0.512</y-m>
+			<z-m>3.036</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>AI_Ball</object-name>
+		<object-name>AI_needle</object-name>
+		<object-name>AI_scala</object-name>
+		<property>orientation/pitch-deg</property>
+		<factor>-1</factor>
+		<center>
+			<x-m>-6.092</x-m>
+			<y-m>-0.512</y-m>
+			<z-m>3.036</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>AI_Ball.001</object-name>
+		<object-name>AI_needle.001</object-name>
+		<property>orientation/roll-deg</property>
+		<factor>-1</factor>
+		<center>
+			<x-m>-6.092</x-m>
+			<y-m>-0.022</y-m>
+			<z-m>3.101</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>AI_Ball.001</object-name>
+		<object-name>AI_needle.001</object-name>
+		<object-name>AI_scala.001</object-name>
+		<property>orientation/pitch-deg</property>
+		<factor>-1</factor>
+		<center>
+			<x-m>-6.092</x-m>
+			<y-m>-0.022</y-m>
+			<z-m>3.101</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+</PropertyList>
+

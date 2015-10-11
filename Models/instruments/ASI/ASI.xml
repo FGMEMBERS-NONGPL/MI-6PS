@@ -1,0 +1,102 @@
+<PropertyList>
+	<path>ASI.ac</path>
+	
+	<animation>
+		<name>ASI</name>
+		<object-name>ASI_Glass</object-name>
+		<object-name>airspeed</object-name>
+		<object-name>airspeed.001</object-name>
+		<object-name>airspeed-needle</object-name>
+	</animation>
+	
+	<animation>
+	  <type>noshadow</type>
+	  <object-name>ASI_Glass</object-name>
+	</animation>
+	
+	<animation>
+	  <type>shader</type>
+	  <shader>chrome</shader>
+	  <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+	  <object-name>ASI_Glass</object-name>
+	</animation>
+	
+	<animation>
+    <type>material</type>
+    
+		
+		<object-name>airspeed.001</object-name>
+		<object-name>airspeed-needle</object-name>
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+	
+	<animation>
+		<type>range</type>
+		<object-name>ASI</object-name>
+		<min-m>0</min-m>
+		<max-m>7</max-m>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>airspeed-needle</object-name>
+		<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>26.998</ind>
+				<dep>5</dep>
+			</entry>
+			<entry>
+				<ind>53.996</ind>
+				<dep>50</dep>
+			</entry>
+			<entry>
+				<ind>80.994</ind>
+				<dep>95</dep>
+			</entry>
+			<entry>
+				<ind>107.992</ind>
+				<dep>139</dep>
+			</entry>
+			<entry>
+				<ind>134.99</ind>
+				<dep>183</dep>
+			</entry>
+			<entry>
+				<ind>161.998</ind>
+				<dep>223</dep>
+			</entry>
+			<entry>
+				<ind>188.986</ind>
+				<dep>263</dep>
+			</entry>
+			<entry>
+				<ind>215.984</ind>
+				<dep>306</dep>
+			</entry>
+			<entry>
+				<ind>242.982</ind>
+				<dep>350</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m>-6.056</x-m>
+			<y-m>-0.620</y-m>
+			<z-m>3.036</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+</PropertyList>
